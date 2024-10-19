@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Country</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        h2{
+            margin: 50px;
+            font-size:30px;
+            color: brown;
+            font-weight: bold;
+        }
+        form label{
+            font-size: 25px;
+            color: black;
+            font-weight: bold;
+        }
+        form input[type="submit"]{
+            width:20%;
+            height: 30px;
+            background-color: #9f8606;
+            border: #9f8606;
+            border-radius: 7px;
+            font-weight: bold;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        select{
+            width: 40%;
+            height: 30%;
+            font-size: 18px;
+            padding: 5px;
+            border-radius:7px;
+            color: rgb(104, 9, 4);
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h2>Country Selection Form</h2>
+    <form>
+        <label for="country">Select Country:</label><br> <br>
+        <select id="country" name="country">
+            <option value="select" disabled selected>select</option>
+            <option value="india">India</option>
+            <option value="usa">United States</option>
+            <option value="uk">United Kingdom</option>
+            <option value="canada">Canada</option>
+            <option value="australia">Australia</option>
+            <option value="japan">Japan</option>
+        </select><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

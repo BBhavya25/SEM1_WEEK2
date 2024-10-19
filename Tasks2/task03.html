@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom List Items</title>
+    <style>
+        ul.custom-list {
+            list-style-type: none;
+        }
+
+        ul.custom-list li::before {
+            content: "✔";
+            color: rgb(5, 121, 5);
+        }
+    </style>
+</head>
+<body>
+    <h2>Custom List with Symbols</h2>
+    <ul class="custom-list">
+        <li>Running</li>
+        <li>Walking</li>
+        <li>Yoga</li>
+        <li>Meditation</li>
+        <li>Gym</li>
+        <li>Skipping</li>
+        <li>Jogging</li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient Button</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background:linear-gradient(45deg, rgb(185, 234, 170), rgb(252, 150, 167))
+}
+
+.gradient-button {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(45deg, #eecc7e, #cd064b);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.gradient-button:hover {
+    background: linear-gradient(45deg, #94cee7, #5bc862);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+
+    </style>
+</head>
+<body>
+
+    <button class="gradient-button">Click Me</button>
+
+</body>
+</html>

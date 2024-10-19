@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body{
+           justify-content: center;
+           align-items: center;
+        }
+        h2{
+           color: hsla(122, 92%, 34%, 0.856);
+           font-size: 40px;
+           text-align: center;
+           font-weight:bold;
+           font-family:'Times New Roman', Times, serif;
+           text-shadow: 3px 3px 3px rgb(197, 7, 114);
+        }
+        form{
+            text-align: center;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .form input[type="text"],
+        .form input[type="email"],
+        .form input[type="password"] {
+            width: 40%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 2px solid #890505;
+            border-radius: 8px;
+        }
+
+        .form input[type="submit"] {
+            width: 30%;
+            padding: 10px;
+            background-color: #c7a109;
+            color: rgb(24, 28, 1);
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>Register Form</h2>
+    <form  class="form">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <label for="confirm_password">Confirm Password:</label><br>
+        <input type="password" id="confirm_password" name="confirm_password" required><br><br>
+
+        <input type="submit" value="Register">
+    </form>
+</body>
+</html> 
