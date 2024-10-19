@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav clas="nav-container">
+        <div class="logo-container">
+            <img src="https://files.oaiusercontent.com/file-NUoac9imiklBmRrAblEyuIhU?se=2024-10-19T14%3A40%3A58Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D2629047f-b808-4d63-b594-51ea63a8f564.webp&sig=/bXG0atVlh/tMmSCPXI0sHvkuu3sylQCBlvelxbMeCE%3D" alt="logo" class="logo">
+            <span class="site-name"><h1>HT FitnessTracker</h1></span>
+         </div>
+        <ul class="navbar">
+            <li><a href="#home" class="nav-button">Home</a></li>
+            <li><a href="#user-profile" class="nav-button">User Profile</a></li>
+            <li><a href="#workouts" class="nav-button">Workouts</a></li>
+            <li><a href="#progress" class="nav-button">Progress</a></li>
+            <li><a href="#log-workout" class="nav-button">Log Workout</a></li>
+            <li><a href="#exercise-list" class="nav-button">Exercise List</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+     <section>
+    <header class="hero" id="home">
+        <h1>Welcome to  HT Fitness Tracker</h1>
+        <h3>Track your workouts and monitor progress effectively!</h3>
+    </header>
+</section>
+
+    <!-- User Profile Section -->
+    <section id="user-profile" class="container">
+        <h2>User Profile</h2>
+        <div class="user-info">
+            <h3>Username: Harshitha</h3>
+            <p>Total Workouts: 50</p>
+            <p>Total Calories Burned: 12,000</p>
+        </div>
+    </section>
+
+    <!-- Workout List Section -->
+    <section id="workouts" class="container">
+        <h2>Daily Workout Routines</h2>
+        <ul class="workout-list">
+            <li class="workout-item cardio">
+                <h3>Cardio: Running</h3>
+                <p><strong>Duration:</strong> 30 mins</p>
+                <p><strong>Calories burned:</strong> 300</p>
+                <p><strong>Description:</strong> A vigorous running session to improve cardiovascular health.</p>
+            </li>
+            <li class="workout-item strength">
+                <h3>Strength: Weightlifting</h3>
+                <p><strong>Duration:</strong> 45 mins</p>
+                <p><strong>Calories burned:</strong> 400</p>
+                <p><strong>Description:</strong> Focus on heavy lifts to build muscle strength.</p>
+            </li>
+            <li class="workout-item yoga">
+                <h3>Yoga: Morning Stretch</h3>
+                <p><strong>Duration:</strong> 20 mins</p>
+                <p><strong>Calories burned:</strong> 100</p>
+                <p><strong>Description:</strong> A gentle yoga routine to improve flexibility and relaxation.</p>
+            </li>
+            <li class="workout-item jumprope">
+                <h3>Jump Rope: High-Intensity Interval</h3>
+                <p><strong>Duration:</strong> 15 mins</p>
+                <p><strong>Calories burned:</strong> 150</p>
+                <p><strong>Description:</strong> A high-energy jump rope workout that boosts cardiovascular health and burns fat quickly.</p>
+            </li>
+            
+        </ul>
+    </section>
+
+    <!-- Progress Table Section -->
+    <section id="progress" class="container">
+        <h2>Your Progress</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Workout Type</th>
+                    <th>Duration</th>
+                    <th>Calories Burned</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2024-10-18</td>
+                    <td>Running</td>
+                    <td>30 mins</td>
+                    <td>300</td>
+                </tr>
+                <tr>
+                    <td>2024-10-17</td>
+                    <td>Weightlifting</td>
+                    <td>45 mins</td>
+                    <td>400</td>
+                </tr>
+                <tr>
+                    <td>2024-10-16</td>
+                    <td>Yoga</td>
+                    <td>20 mins</td>
+                    <td>100</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Log Workout Form Section -->
+    <section id="log-workout" class="container">
+        <h2>Log a New Workout</h2>
+        <form>
+            <label for="workout-type">Workout Type:</label>
+            <select id="workout-type" name="workout-type">
+                <option value="select"disabled selected>select type</option>
+                <option value="cardio">Cardio</option>
+                <option value="strength">Strength</option>
+                <option value="yoga">Yoga</option>
+                <option value="running">Running</option>
+                <option value="squats">Squats</option>
+                <option value="pushup">Push-ups</option>
+            </select>
+
+            <label for="duration">Duration (mins):</label>
+            <input type="number" id="duration" name="duration" min="1" required>
+
+            <label for="calories">Calories Burned:</label>
+            <input type="number" id="calories" name="calories" min="1" required>
+
+            <button type="submit">Log Workout</button>
+        </form>
+    </section>
+
+    <!-- Exercise List Section -->
+    <section id="exercise-list" class="container">
+        <h2>Exercise List</h2>
+        <ul>
+            <li>Running</li>
+            <li>Weightlifting</li>
+            <li>Squats</li>
+            <li>Push-ups</li>
+            <li>Yoga</li>
+            <li>Jump Rope</li>
+            <li>Deadlifts</li>
+        </ul>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Fitness Tracker</p>
+    </footer>
+
+</body>
+</html>

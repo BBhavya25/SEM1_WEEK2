@@ -1,0 +1,243 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f89292, #f8ca6d);
+    color:black;
+}
+.container {
+    margin: 30px auto; 
+    max-width: 1200px;
+    padding: 10px; 
+    background-color: rgba(251, 241, 241, 0.9);
+    border-radius: 8px;
+    color: #333;
+}
+
+h1, h2 {
+    text-align: center;
+}
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: darkolivegreen;
+    padding: 10px 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Logo and site name */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 90px;
+    height: 80px;
+    margin-right: 10px;
+}
+
+.site-name {
+    font-size: 24px;
+    color:rgb(132, 17, 36);
+    font-weight: bold;
+}
+
+
+.navbar {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    text-decoration: none;
+    color: white;
+    background-color: #b7660a;
+    border: none;
+    border-radius: 7px;
+    text-align: center;
+    transition: background-color 0.8s;
+}
+
+.nav-button:hover {
+    background-color: #940a3a;
+    transform: scale(1.05);
+}
+
+.nav-button:active {
+    background-color: #3e8e41;
+}
+
+
+nav {
+    background-color:darkolivegreen;
+    padding: 7px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ebd3d3;
+}
+
+.hero {
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    background: rgba(217, 248, 233, 0.5);
+    color: rgb(12, 10, 10);
+}
+
+.user-info {
+    padding: 30px; 
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(214, 24, 24, 0.1);
+    text-align: center;
+}
+
+.user-info h3, .user-info p {
+    margin: 10px 0;
+}
+
+.workout-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+}
+
+.workout-item {
+    background-color: white;
+    margin: 20px; 
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(222, 11, 11, 0.1);
+    transition: transform 0.3s;
+    color: #333;
+    width: 190px; 
+    text-align: left; 
+}
+
+.workout-item:hover {
+    transform: scale(1.05);
+}
+
+.cardio {
+    border-left: 8px solid orange;
+}
+
+.strength {
+    border-left: 8px solid green;
+}
+
+.yoga {
+    border-left: 8px solid darkblue;
+}
+.jumprope{
+    border-left:8px solid #ff6b6b;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+table th {
+    background-color: #333;
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    scroll-margin-top: 170px; /* Adjust this value according to the height of your fixed navbar */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    margin: 10px 0 5px 0;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #870808;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1a1616;
+}
+
+#exercise-list ul {
+    list-style-type: none;
+    padding-left: 20px;
+    text-align: center;
+    font-size: 19px;
+    font-weight: bold;
+    color: rgb(105, 5, 5);
+}
+
+footer {
+    text-align: center;
+    padding: 5px 0;
+    background-color: #333;
+    color: white;
+}
